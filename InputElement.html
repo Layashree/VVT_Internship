@@ -4,45 +4,63 @@
 <title>Input Elements</title>
 </head>
 <body>
+<fieldset>
+<legend>Login:</legend>
 <form>
-<h1>Text box</h1>
-<input type="text" name="UserName:" value="Enter the name" size="15" maxlength="25">
-<input type="password" name="Password:" value="">
-<br>
+<!--<h1>Text box</h1>-->
+UserName :<br>
+<input type="text" name="UserName" placeholder="Enter the name" size="15" maxlength="25" required><br>
 
-<h1>Radio Button</h1>
-<h2>Gender</h2>
+Password :<br>
+<input type="password" name="Password"  placeholder="*****" style="color:#ff0000" required><br>
+
+Email:<br>
+<input type="email" name="Email"  placeholder="Your email here" style="color:blue" required><br>
+
+ContactNo.:<br>
+<input type="tel" name="phone"  placeholder="Contact No." style="color: rgb(100 250 150);" required><br>
+
+<label for="birthday">DOB</label><br>
+<input type="date" id="birthday" name="birthday"  required><br>
+
+<!--<h1>Radio Button</h1>-->
+<h3>Gender</h3>
 <input type="radio" name="Gender">Male<br>
 <input type="radio" name="Gender">Female<br>
 
-<h1>Check Box</h1>
-<h2>Hobbies</h2>
+<!--<h1>Check Box</h1>-->
+<h3>Hobbies</h3>
 <input type="checkbox" name="Hobbies">Painting<br> 
 <input type="checkbox" name="Hobbies">Dancing<br>
-<input type="checkbox" name="Hobbies">Sleeping<br>
+<input type="checkbox" name="Hobbies" checked>Sleeping<br>
 <input type="checkbox" name="Hobbies">singing<br>
 
-<h1>Text Area</h1>
-<h2>Address</h2>
-<textarea rows="4" cols="8"></textarea>
+<!--<h1>Text Area</h1>-->
+<h3>Address</h3>
+<textarea rows="4" cols="8"></textarea><br>
+<input type="color">
 
-<h1>Select</h1>
-<h2>Interested Course</h2>
-<select size="5" multiple>
+<!--<h1>Select</h1>-->
+<h3>Interested Course</h3>
+<select >
 <option>C</option>
 <option>C++</option>
 <option>Java</option>
 <option>Python</option>
 <option>PHP</option>
-</select>
+</select><br>
 
-<h1>Upload File</h1>
-<input type="file" name="file">
+<input type="range" min="1" max="10" ><br>
 
-<h1>Button</h1>
+<h3>Upload File</h3>
+<input type="file" name="file"><br><br>
+<input type="number" min="1" max="3"><br><br>
+
+<!--<h1>Button</h1>-->
 <input type="Submit" name="button" value="Submit">
 <input type="Reset" name="button" value="Reset">
 <input type="button" name="button" value="Click">
 </form>
+</fieldset>
 </body>
 </html>
